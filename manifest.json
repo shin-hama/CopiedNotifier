@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Event Notifier",
+  "version": "1.0",
+  "description": "This extension pops up a 'Copied!' message when a copy event is detected",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

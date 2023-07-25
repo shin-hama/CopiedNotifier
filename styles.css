@@ -1,0 +1,40 @@
+#copied-extension-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+  background-color: rgba(32, 32, 32, 0.8);
+  border-radius: 8px;
+  animation-name: CopiedExtFadeDownAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  z-index: 999999; /* 他の要素の上に表示 */
+}
+
+@keyframes CopiedExtFadeDownAnime {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+    background-position: 0%;
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
