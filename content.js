@@ -1,12 +1,6 @@
 const ID = 'copied-extension-notification'
 // Listen for copy event
-document.addEventListener('copy', function (event) {
-  // Only show notification if there's selected text
-  if (!document.getSelection().toString().trim()) {
-    return
-  }
-
-  console.log(event)
+document.addEventListener('copy', function () {
   // Remove existing notification if any
   const existingNotification = document.getElementById(ID)
   if (existingNotification) {
